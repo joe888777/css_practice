@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: '微軟正黑體';
+    
+}
+body{
+    background:linear-gradient(-40deg,#CECEFF,#000079)
+    fixed center center /100% 100%;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 1350px;
+    justify-content: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(660px,1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.item{
+    margin-top: 20px;
+    margin-left:20px;
+    display: block;
+    box-sizing: border-box;
+    width: 630px;
+    height: 252px;
+    background:#BBFFFF;
+
+    box-shadow: 2px 2px 4px #000079;
+    
+    
+}
+.item .pic{
+    float: left;
+    width: 40%;
+    
+}
+.item img{
+    
+    width: 100%;
+}
+.item .txt{
+    width: 345px;
+    height: 245px;
+    float: left;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+.item table{
+    
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.item td{
+    color: #000;
+    margin: 5px 10px 5px 5px;
+    font-size: 0.9em;
+    border-bottom: 1px solid #000;
+}
+.item h1{
+    margin-left:10px;
+    font-size: 1.5em;
+}
+.fixcom{
+    height: 10px;
+    clear: both;
+}
+.item:hover{
+    background-color: #ff8000;
+    transform: translateY(-5%);
+}
+.item:hover h1{
+    color: #fff;
+}
+.item:hover td{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
