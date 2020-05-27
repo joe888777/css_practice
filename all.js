@@ -27,13 +27,13 @@ for(let i=0;i<data.length;i++){
     let tr0=document.createElement('tr');
 
     let td0=document.createElement('td');
-    td0.textContent=data[i].年+' 年';
+    td0.textContent=data[i].年+ (data[i].年? '年':'無法顯示');
     tr0.appendChild(td0);
     let td1=document.createElement('td');
-    td1.textContent=data[i].月+' 月';
+    td1.textContent=data[i].月+(data[i].月? '月':'無法顯示');
     tr0.appendChild(td1);
     let td2=document.createElement('td');
-    td2.textContent='售票機日均：'+data[i].售票機日均筆數;
+    td2.textContent='售票機日均：'+(data[i].售票機日均筆數? data[i].售票機日均筆數:'無法顯示');
     tr0.appendChild(td2);
     let td3=document.createElement('td');
 
@@ -42,13 +42,13 @@ for(let i=0;i<data.length;i++){
     let tr1=document.createElement('tr');
 
     let td4=document.createElement('td');
-    td4.textContent='團體票日均：'+data[i].團體票日均筆數;
+    td4.textContent='團體票日均：'+(data[i].團體票日均筆數? data[i].團體票日均筆數:'無法顯示');
     tr1.appendChild(td4);
     let td5=document.createElement('td');
-    td5.textContent='車上刷卡日均：：'+data[i].車上刷卡日均筆數;
+    td5.textContent='車上刷卡日均：：'+(data[i].車上刷卡日均筆數? data[i].車上刷卡日均筆數 :'無法顯示');
     tr1.appendChild(td5);
     let td6=document.createElement('td');
-    td6.textContent='月台上刷卡日均：'+data[i].月台上刷卡日均筆數;
+    td6.textContent='月台上刷卡日均：'+(data[i].月台上刷卡日均筆數? data[i].月台上刷卡日均筆數:'無法顯示');
     tr1.appendChild(td6);
 
     
@@ -57,13 +57,13 @@ for(let i=0;i<data.length;i++){
     let tr2=document.createElement('tr');
     
     let td7=document.createElement('td');
-    td7.textContent='總運量：'+data[i].總運量;
+    td7.textContent='總運量：'+(data[i].總運量? data[i].總運量:'無法顯示');
     tr2.appendChild(td7);
     let td8=document.createElement('td');
-    td8.textContent='日均運量：'+data[i].日均運量;
+    td8.textContent='日均運量：'+(data[i].日均運量? data[i].日均運量:'無法顯示');
     tr2.appendChild(td8);
     let td9=document.createElement('td');
-    td9.textContent='假日均運量：'+data[i].假日均運量;
+    td9.textContent='假日均運量：'+(data[i].假日均運量? data[i].假日均運量 :'無法顯示');
     tr2.appendChild(td9);
 
     tbl.appendChild(tr2);
@@ -72,7 +72,7 @@ for(let i=0;i<data.length;i++){
     let tr3=document.createElement('tr');
    
     let tdA=document.createElement('td');
-    tdA.textContent='補票日均：'+data[i].補票日均筆數;
+    tdA.textContent='補票日均：'+(data[i].補票日均筆數? data[i].補票日均筆數:'無法顯示');
     tr3.appendChild(tdA);
 
     tbl.appendChild(tr3);

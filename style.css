@@ -6,8 +6,9 @@
     
 }
 body{
-    background:linear-gradient(-40deg,#CECEFF,#000079)
-    fixed center center /100% 100%;
+    background-image:linear-gradient(-40deg,#CECEFF ,#000079 );
+    background-attachment: fixed;
+    
 }
 .wrap{
     display: flex;
@@ -36,16 +37,16 @@ body{
     
     
 }
-.item .pic{
+.item > .pic{
     float: left;
     width: 40%;
     
 }
-.item img{
+.item >.pic > img{
     
     width: 100%;
 }
-.item .txt{
+.item > .txt{
     width: 345px;
     height: 245px;
     float: left;
@@ -57,20 +58,20 @@ body{
     box-sizing: border-box;
 
 }
-.item table{
+.item > .txt > table{
     
     margin-left: 30px;
     margin-top: 5px;
 }
-.item td{
+.item > .txt > table > tr > td{
     color: #000;
     margin: 5px 10px 5px 5px;
-    font-size: 0.9em;
+    font-size: 14px;
     border-bottom: 1px solid #000;
 }
-.item h1{
+.item > .txt > h1{
     margin-left:10px;
-    font-size: 1.5em;
+    font-size: 22px;
 }
 .fixcom{
     height: 10px;
@@ -80,10 +81,10 @@ body{
     background-color: #ff8000;
     transform: translateY(-5%);
 }
-.item:hover h1{
+.item:hover > .txt > h1{
     color: #fff;
 }
-.item:hover td{
+.item:hover > .txt > table > tr > td{
     color: #fff;
     border-bottom: 1px solid #fff;
 }
